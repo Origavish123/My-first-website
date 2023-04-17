@@ -1,0 +1,59 @@
+.animate {
+    animation-name: moveee;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes moveee {
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    20% {
+        transform: translateX(-350px) translateY(20px);
+    }
+
+    100% {
+        transform: translateX(300px) translateY(-40px);
+    }
+}
+
+body {
+    background: linear-gradient(red, white);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.btnPick {
+    padding: 5px 20px;
+    background: radial-gradient(aquamarine, lime);
+    border-radius: 20px;
+
+}
+#startId{
+    background-color: aquamarine
+}
+.b{
+animation-name: dor;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+
+@keyframes dor{
+    20%{
+        color: aquamarine;
+    }
+    40%{
+        color: blue;
+    }
+    60%{
+        color: brown;
+    }
+    80%{
+        color: white;
+    }
+    100%{
+        color: aquamarine;
+    }
+}
